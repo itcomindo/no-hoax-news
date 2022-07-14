@@ -1,0 +1,9 @@
+#nhx_cta {
+    background:linear-gradient(to right, #191935, #22244C, #0D0D1D);
+}
+
+#nhx_cta content img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}

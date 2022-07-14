@@ -1,0 +1,83 @@
+.contoh {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    row-gap: 8px;
+}
+
+.item_kupret {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+.item_kupret a {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.tanggal_posting {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    background-color: darkblue;
+    color: white;
+    position: relative;
+}
+
+.tanggal_posting:after {
+    width: 50%;
+}
+
+.bulan {
+    font-size: 16px;
+    line-height: 1;
+    margin: 0;
+}
+
+.tanggal {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+}
+
+.judul_exc {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 4px;
+}
+
+.judul_exc h3 {
+    margin: 0;
+    line-height: 1;
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 2;
+   -webkit-box-orient: vertical;
+}
+
+.kupret_exc {
+    font-size: 15px;
+    line-height: 15px;
+    margin: 0;
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 2;
+   -webkit-box-orient: vertical;
+}
+
+.kupret_exc p {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}

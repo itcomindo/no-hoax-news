@@ -1,0 +1,16 @@
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --color-eee: #eee;
+  --color-ddd: #ddd;
+  --color-darkgreen: darkgreen;
+  --color-darkred: darkred;
+  --boxshad-dark-s: 0 0 3px rgba(0, 0, 0, 0.3);
+  --boxshad-dark-m: 0 0 5px rgba(0, 0, 0, 0.5);
+  --boxshad-dark-l: 0 0 10px rgba(0, 0, 0, 0.5);
+  --borbot-solid-01: 1px solid rgba(0, 0, 0, 0.1);
+  --borbot-solid-02: 1px solid rgba(0, 0, 0, 0.2);
+  --borbot-solid-03: 1px solid rgba(0, 0, 0, 0.3);
+  --borbot-solid-05: 1px solid rgba(0, 0, 0, 0.5);
+  --borbot-solid-1: 1px solid black;
+}

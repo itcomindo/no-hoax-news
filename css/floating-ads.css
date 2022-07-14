@@ -1,0 +1,42 @@
+.floating_ads_right {
+    background-color: darkred;
+    position: fixed;
+    width: 168px;
+    height: 600px;
+    top: 3em;
+    right: 50%;
+    z-index: 8888;
+    margin-right: -674px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    row-gap: 1em;
+}
+
+.floating_ads_left {
+    background-color: darkred;
+    position: fixed;
+    width: 168px;
+    height: 600px;
+    top: 3em;
+    left: 50%;
+    z-index: 8888;
+    margin-left: -674px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    row-gap: 1em;
+}
+
+.when_scroll_to_top {
+    transform: translateY(-3em) !important;
+    transition: 0.3s linear all;
+}

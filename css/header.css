@@ -1,0 +1,15 @@
+#header .content {
+    display: flex;
+}
+
+#wr_logo {
+    display: flex;
+    flex: 1;
+}
+
+#wr_ads_in_header {
+    width: calc(728px + 16px);
+    display: flex;
+    justify-content: flex-end;
+}
+

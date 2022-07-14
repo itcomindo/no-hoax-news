@@ -1,0 +1,106 @@
+.col_in_single_post {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+#nhx_pr_single_post .content #col_left {
+  width: 70%;
+  overflow: hidden;
+}
+
+#nhx_pr_single_post .content #col_left h1 {
+  line-height: 1.2;
+}
+
+
+#nhx_pr_single_post .content #col_left .wr_date_and_author_in_in_single_post {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+
+
+#col_left .wr_fi {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+#col_left .wr_fi img {
+  width: 100%;
+  height: auto;
+}
+
+
+#col_left.video .this_wr_is_video_player {
+  width: 100%;
+  height: 400px;
+  visibility: visible !important;
+  display: flex !important;
+  background-color: black;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+
+/* Styling for Post With Gallery */
+
+.this_is_post_with_gallery {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.flimag_wr {
+  width: calc(100% / 4 - 8px);
+  overflow: hidden;
+  margin: 4px;
+  height: 6em;
+  overflow: hidden;
+  background-color: silver;
+}
+
+.this_is_post_with_gallery .flimag_wr img {
+  width: 100%;
+  height: auto;
+}
+
+/* column right */
+
+#nhx_pr_single_post .content #col_right {
+  background-color: #f5f5f5;
+  width: 30%;
+}
+
+/*The Content*/
+
+.the_content p code {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 0 16px 16px 16px;
+    display: block;
+}
+
+.the_content img {
+  width: 100%;
+  height: auto;
+}
+
+.the_content h3 {
+  font-size: 1.2em;
+}
+
+.the_content h4 {
+  font-size: 1.1em;
+}
+
+.the_content h5 {
+  font-size: 1em;
+}

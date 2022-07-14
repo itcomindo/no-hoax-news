@@ -1,0 +1,10 @@
+.searchform_in_header_is_not_active {
+    transform: translateX(120%);
+    transition: 0.3s linear all;
+}
+
+
+.searchform_in_header_is_active {
+    transform: translateX(0%);
+    transition: 0.3s linear all;
+}

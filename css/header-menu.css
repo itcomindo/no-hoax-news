@@ -1,0 +1,40 @@
+/* Header Menu */
+
+#header_menu {
+    background-color: var(--color-black);
+    padding: 0;
+}
+
+#header_menu .content {
+    padding: 0;
+}
+
+
+
+#header_menu .content div ul {
+    display: flex;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#header_menu .content div ul li {
+    list-style: none;
+    padding: 6px 15px;
+}
+
+#header_menu .content div ul li:hover {
+    background-color: rgb(189, 4, 4);
+    transition: 0.2s linear all;
+}
+
+
+
+#header_menu .content div ul li a {
+    color: var(--color-white);
+}
+
+.current-menu-item {
+    background-color: rgb(189, 4, 4);
+    transition: 0.2s linear all;
+}
