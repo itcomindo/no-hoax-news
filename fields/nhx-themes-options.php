@@ -18,7 +18,7 @@ function treeh_themes_options()
     Container::make('theme_options', __('Themes Header'))
         ->set_page_parent($basic_options_container) // reference to a top level container
         ->add_fields(array(
-            Field::make('text', 'treeh_header_menu', __('Header Menu'))
+            Field::make('text', 'treeh_header_menu', 'Header Menu')
                 ->set_attribute('placeholder', 'ketik nama menu'),
         ));
 
