@@ -40,9 +40,11 @@ while ($query->have_posts()):
 			    </div>
 
 			    <div class="wr-meta_headline">
-			    	<a title="<?php the_title_attribute();?>"  href="<?php the_permalink();?>">
+			    	<!-- Title -->
+					<a title="<?php the_title_attribute();?>"  href="<?php the_permalink();?>">
 			    		<h3><?php the_title();?></h3>
 			        </a>
+					<!-- Excerpt -->
 			        <span class="wr-excerpt_headline"><?php echo strip_tags(get_the_excerpt()); ?></span>
 			        <button class="btn-headline"><a href="<?php the_permalink();?>" title="<?php the_title_attribute();?>" >Baca Berita</a></button>
 			        <span class="wr-date_headline">
