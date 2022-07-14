@@ -7,6 +7,7 @@ function this_is_homepage()
 function this_is_the_post_title() {
 	$nhx_post_title_lenght_option = carbon_get_theme_option('nhx_post_title_lenght_option');
 	$nhx_post_title_value = carbon_get_theme_option('nhx_post_title_value');
+	$post_title_headline_first_col_font_size = carbon_get_theme_option('post_title_headline_first_col_font_size');
 	if ($nhx_post_title_lenght_option == 'yes') {?>
 	<h3 style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: <?php echo $nhx_post_title_value;?>; -webkit-box-orient: vertical;"><?php the_title();?></h3>
 	<?php

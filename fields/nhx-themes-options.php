@@ -8,7 +8,7 @@ use Carbon_Fields\Field;
 add_action('carbon_fields_register_fields', 'treeh_themes_options');
 function treeh_themes_options()
 {
-    $basic_options_container = Container::make('theme_options', __('No Hoax News'))
+    $basic_options_container = Container::make('theme_options', 'No Hoax News')
         ->set_icon('dashicons-image-filter')
         ->add_fields(array(
             Field::make('text', 'crb_text', 'Text Field'),
@@ -108,7 +108,7 @@ function treeh_themes_options()
         ->add_fields(array(
             // Field untuk konfigurasi homepage Start
             // seprator start
-            Field::make( 'separator', 'headline_start', __( 'Headline Section' ) ),
+            Field::make( 'separator', 'headline_start', 'Headline Section'),
             // seprator
             // post title on headline start
             Field::make('select', 'nhx_post_title_lenght_option', 'Trim Judul Post')
