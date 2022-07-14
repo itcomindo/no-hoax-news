@@ -3,6 +3,20 @@ function this_is_homepage()
 {
     nhx_post_headline();
 }
+// Theme option for homepage
+function this_is_the_post_title() {
+	$nhx_post_title_lenght_option = carbon_get_theme_option('nhx_post_title_lenght_option');
+	$nhx_post_title_value = carbon_get_theme_option('nhx_post_title_value');
+	if ($nhx_post_title_lenght_option == 'yes') {?>
+	<h3 style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: <?php echo $nhx_post_title_value;?>; -webkit-box-orient: vertical;"><?php the_title();?></h3>
+	<?php
+	} else { ?>
+		<h3><?php the_title();?></h3>
+	<?php
+	}
+}
+
+
 // Post Headline
 function nhx_post_headline()
 {
@@ -36,14 +50,16 @@ while ($query->have_posts()):
 					<a href="<?php the_permalink();?>" title="<?php the_title();?>">
 						<img width="236" height="157.17" alt="<?php the_title();?>" title="<?php the_title();?>" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), "large"); ?>">
 			        </a>
+					<!-- Category -->
 			        <ul class="catlink_headline"><?php echo trim($output); ?></ul>
 			    </div>
 
 			    <div class="wr-meta_headline">
-			    	<!-- Title -->
+			    	<!-- Title start -->
 					<a title="<?php the_title_attribute();?>"  href="<?php the_permalink();?>">
-			    		<h3><?php the_title();?></h3>
-			        </a>
+						<?php echo this_is_the_post_title(); ?>
+					</a>
+					<!-- Title End -->
 					<!-- Excerpt -->
 			        <span class="wr-excerpt_headline"><?php echo strip_tags(get_the_excerpt()); ?></span>
 			        <button class="btn-headline"><a href="<?php the_permalink();?>" title="<?php the_title_attribute();?>" >Baca Berita</a></button>
@@ -58,5 +74,3 @@ while ($query->have_posts()):
 	</div>
 <?php
 }
-// register shortcode
-// add_shortcode("headline", "nhx_post_headline");
